@@ -5,14 +5,10 @@ get '/' do
   haml :index
 end
 
-get '/contact' do
-
-end
-
-get '/about' do
-
+get '/works' do
+  haml :works
 end
 
 get '/blog' do
-
+  haml :blog
 end

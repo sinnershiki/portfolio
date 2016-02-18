@@ -51,24 +51,31 @@ body {
   background-color: #FFF;
 }
 
-.indexArea h2 {
+#contents {
+  padding: 1px 15px;
+}
+
+h1 {
   border-bottom: 2px solid black;
 }
 
-.innerIndexArea {
+.area h2 {
+  border-bottom: 2px solid black;
+}
+
+.innerArea {
   padding: 10px 10px;
   background-color: #EEE;
 }
 
-dt{
+#news dt{
   width : 150px;
 /* 左寄せ */
   float : left;
 /* float解除 */
   clear : both;
 }
-
-dd{
+#news dd{
 /* dtの幅分の設定 */
   margin-left : 160px;
 }

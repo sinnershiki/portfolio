@@ -1,12 +1,31 @@
-%div#main_index
-  %div#greet.indexArea
-    %h2 Welcome
-    %div.innerIndexArea
-      ようこそ
+%h1 This is sinner's info
+%div#contents
+  %div#profile.area
+    %h2 About Me
+    %div.innerArea
+      %p Kosuke Sugano (@sinner_shiki)
 
-  %div#news.indexArea
+      -#TODO: navbarに画像使ってリンクまとめる
+    %h2 Links
+    %div.innerArea
+      %p
+        twitter:
+        %a{href: "https://twitter.com/sinner_shiki"} @sinner_shiki
+      %p
+        facebook:
+        %a{href: "https://www.facebook.com/sinner.shiki"} Kosuke Sugano
+      %p
+        github:
+        %a{href: "https://github.com/sinnershiki"} sinnershiki
+
+    %h2 Skills
+    %div.innerArea
+      %p
+        Ruby, Ruby on Rails, Sinatra, Emacs
+
+  %div#news.area
     %h2 Activity
-    %div.innerIndexArea
+    %div.innerArea
       %dt
         年
       %dd
