@@ -8,7 +8,3 @@ end
 get '/works' do
   haml :works
 end
-
-get '/blog' do
-  haml :blog
-end
