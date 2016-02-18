@@ -14,6 +14,7 @@ body {
 #headerTitle p {
   margin: 30px 20px;
   color: white;
+  font-size: 30px;
 }
 
 /* about nav bar  */
@@ -78,4 +79,12 @@ h1 {
 #news dd{
 /* dtの幅分の設定 */
   margin-left : 160px;
+}
+#news dd a:link {
+  color: black;
+  text-decoration: underline;
+}
+#news dd a:visited {
+  color: black;
+  text-decoration: underline;
 }
