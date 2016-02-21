@@ -8,6 +8,7 @@ gem 'haml'
 gem 'coffee-script'
 gem 'rack-test'
 gem 'test-unit'
+gem 'rake'
 
 group :production do
   gem 'unicorn'
