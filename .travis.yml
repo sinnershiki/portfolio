@@ -1,7 +1,10 @@
-languege: ruby
+language: ruby
 rvm:
 - 2.2.4
 bundler_args: "--without production"
+before_install:
+- openssl aes-256-cbc -K $encrypted_5f77db495111_key -iv $encrypted_5f77db495111_iv
+  -in .travis/deploy_key.enc -out .travis/deploy_key -d
 install:
 - bundle install
 script:
@@ -9,12 +12,8 @@ script:
 addons:
   ssh_known_hosts:
   - sinnershiki.com:10022
-after_success:
-- eval "$(ssh-agent -s)"
-- chmod 600 .travis/deploy_key
-- ssh-add .travis/deploy_key
-- git remote add deploy ssh://sugano@sinnershiki.com:10022/home/sugano/portfolio.git
-- git push deploy
-before_install:
-- openssl aes-256-cbc -K $encrypted_5f77db495111_key -iv $encrypted_5f77db495111_iv
-  -in .travis/deploy_key.enc -out .travis/deploy_key -d
+deploy:
+  provider: script
+  script: .travis/deploy.sh
+  on:
+    branch: master
