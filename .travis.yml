@@ -6,6 +6,9 @@ install:
 - bundle install
 script:
 - bundle exec rake test
+addons:
+  ssh_known_hosts:
+  - sinnershiki.com:10022
 after_success:
 - eval "$(ssh-agent -s)"
 - chmod 600 .travis/deploy_key
