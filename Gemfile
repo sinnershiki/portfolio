@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
+gem 'sinatra-contrib'
 gem 'shotgun'
 gem 'thin'
 gem 'sass'
@@ -12,5 +13,4 @@ gem 'rake'
 
 group :production do
   gem 'unicorn'
-  gem 'newrelic_rpm'
 end
