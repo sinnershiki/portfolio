@@ -30,36 +30,10 @@
   %div#news.area
     %h2 Activity
     %div.innerArea
-      -#TODO: 学会とかインターンの他にもgitchrangeとか書けばいい気がする
-      %dt
-        2015/12
-      %dd
-        iiWAS2015にて発表
-      %dt
-        2015/11
-      %dd
-        %a{href: "http://sinner-shiki.hatenablog.com/entry/2015/11/16/214819", target: "_blank"} mixi様主催のGit Challengeに参加
-      %dt
-        2015/09
-      %dd
-        %a{href: "http://sinner-shiki.hatenablog.com/entry/2015/09/07/222958", target: "_blank"} リブセンス様のインターンシップに参加
-      %dt
-        2015/08
-      %dd
-        %a{href: "http://sinner-shiki.hatenablog.com/entry/2015/08/29/234357", target: "_blank"} feedforce様のインターンシップに参加
-      %dt
-        2015/06
-      %dd
-        ICIS2015参加
-      %dt
-        2015/05
-      %dd
-        インターンシップ逆求人フェスティバル参加
-      %dt
-        2015/03
-      %dd
-        情報処理学会全国大会にて発表
-      %dt
-        2015/02
-      %dd
-        任天堂様のインターンシップに参加
+      - @activities.each do |activity|
+        %dt=activity[:date]
+        %dd
+          - if activity[:uri]
+            %a{href: activity[:uri], target: "_blank"}=activity[:text]
+          - else
+            =activity[:text]
