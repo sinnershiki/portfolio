@@ -1,0 +1,9 @@
+%h1 Entries
+%div#contents
+  %div#entries.area
+    - @entries.each do |entry|
+      %h2=entry.title
+      %div.innerArea
+        %p
+          =entry.summary
+        %a{href: entry.alternate_link, target: '_blank'}=entry.alternate_link
