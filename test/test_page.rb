@@ -16,4 +16,9 @@ class PageTest < Test::Unit::TestCase
     get '/works'
     assert last_response.ok?
   end
+
+  test "blog page" do
+    get '/blog'
+    assert last_response.ok?
+  end
 end
