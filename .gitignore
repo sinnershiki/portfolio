@@ -38,3 +38,7 @@ bower.json
 
 # travis
 deploy_key
+
+/etc
+run.sh
+test.sh

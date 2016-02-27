@@ -10,6 +10,7 @@ gem 'coffee-script'
 gem 'rack-test'
 gem 'test-unit'
 gem 'rake'
+gem 'atomutil'
 
 group :production do
   gem 'unicorn'
