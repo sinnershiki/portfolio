@@ -3,14 +3,14 @@
   %div#main
     %div#notification
       %h3.title Notification
-      %div.innerArea
+      %div.inner-area
         %dl
           %dt 2016/06/14
           %dd リニューアル
 
     %div#activity.area
       %h3.title Activity
-      %div.innerArea
+      %div.inner-area
         %dl
           - @activities.each do |activity|
             %dt=activity[:date]

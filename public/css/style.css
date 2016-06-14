@@ -11,7 +11,15 @@
   border-bottom: 2px solid black;
 }
 
-.innerArea {
+.entry {
+  text-align: right;
+}
+
+.entry p {
+  text-align: left;
+}
+
+.inner-area {
   padding: 10px 10px;
   background-color: #EEE;
   margin-bottom: 30px;

@@ -1,10 +1,10 @@
 %div#contents
+  %h2.title about me
   %div#main
-    %h2 about me
-    %div#profile.area
+    %div#contacts.area
       -#TODO: navbarに画像使ってリンクまとめる
-      %h2.title Links
-      %div.innerArea
+      %h3.title Links
+      %div.inner-area
         %dl
           %dt twitter
           %dd
@@ -19,7 +19,30 @@
           %dd
             %a{href: "https://www.npmjs.com/~sinner"} @sinner
 
-      %h2.title Skills
-      %div.innerArea
+    %div#skills.area
+      %h3.title Skills
+      %div.inner-area
         %p
           Ruby, Ruby on Rails, Sinatra, coffee script
+
+    %div#npm-packages.area
+      %h3.title npm packages
+      %div.inner-area
+        %dl
+          %dt
+            %a{href: "https://www.npmjs.com/package/japanese-public-holiday"} japanese-public-holiday
+          %dd
+            %p 簡易的な祝日判定モジュール
+          %dt
+            %a{href: "https://www.npmjs.com/package/hubot-ritsbus"} hubot-ritsbus
+          %dd
+            %p 立命館大学と南草津（草津）間のバス時刻通知bot
+
+    %div#works-etc.area
+      %h3.title etc...
+      %div.inner-area
+        %dl
+          %dt
+            %a{href: "https://github.com/sinnershiki/dot_files"} dot_files
+          %dd
+            %p Emacs, tmux and zsh config
