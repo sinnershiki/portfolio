@@ -2,11 +2,11 @@
 %div#contents
   %div#entries.area
     - @entries.each do |entry|
-      %h2=entry.title
+      %h2.title=entry.title
       %div.innerArea
         %p
           =entry.summary
-        %a{href: entry.alternate_link, target: '_blank'}view more
+        %a.pull-right.btn.btn-info{href: entry.alternate_link, target: '_blank', role: 'button'}view more
 
     %div#bloglink
       %p
