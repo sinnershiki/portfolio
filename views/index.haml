@@ -1,39 +1,20 @@
-%h1 This is sinner's info
+%h2.title Welcom to sinnershiki.com
 %div#contents
-  %div#profile.area
-    %h2 About Me
-    %div.innerArea
-      %p Kosuke Sugano (@sinner_shiki)
+  %div#notification
+    %h3.title Notification
+    %div.inner-area
+      %dl
+        %dt 2016/06/14
+        %dd リニューアル
 
-      -#TODO: navbarに画像使ってリンクまとめる
-    %h2 Links
-    %div.innerArea
-      %p
-        twitter:
-        %a{href: "https://twitter.com/sinner_shiki"} @sinner_shiki
-      %p
-        facebook:
-        %a{href: "https://www.facebook.com/sinner.shiki"} Kosuke Sugano
-      %p
-        github:
-        %a{href: "https://github.com/sinnershiki"} sinnershiki
-      %p
-        npm:
-        %a{href: "https://www.npmjs.com/~sinner"} @sinner
-
-
-    %h2 Skills
-    %div.innerArea
-      %p
-        Ruby, Ruby on Rails, Sinatra, coffee script
-
-  %div#news.area
-    %h2 Activity
-    %div.innerArea
-      - @activities.each do |activity|
-        %dt=activity[:date]
-        %dd
-          - if activity[:uri]
-            %a{href: activity[:uri], target: "_blank"}=activity[:text]
-          - else
-            =activity[:text]
+  %div#activity.area
+    %h3.title Activity
+    %div.inner-area
+      %dl
+        - @activities.each do |activity|
+          %dt=activity[:date]
+          %dd
+            - if activity[:uri]
+              %a{href: activity[:uri], target: "_blank"}=activity[:text]
+            - else
+              =activity[:text]

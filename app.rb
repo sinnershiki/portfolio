@@ -11,8 +11,8 @@ get '/' do
   haml :index
 end
 
-get '/works' do
-  haml :works
+get '/about' do
+  haml :about
 end
 
 get '/blog' do

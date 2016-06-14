@@ -1,90 +1,31 @@
-body {
-  background-color: #EEE;
-  font-family: 'ＭＳ Ｐゴシック', 'ヒラギノ角ゴ Pro W3', Arial, Helvetica;
-}
-
-/* Header Title */
-#headerTitle {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #222;
-}
-#headerTitle p {
-  margin: 30px 20px;
-  color: white;
-  font-size: 30px;
-}
-
-/* about nav bar  */
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #666;
-  box-shadow: 2px rgba(0,0,0,0.4);
-}
-.navbar li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-/*
-.navbar li:last-child {
-  border-right: none;
-}
-*/
-.navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-/* Change the link color to #444 on hover */
-.navbar li a:hover {
-  background-color: #444;
-}
-
 #main {
-  padding: 20px 15px;
+  padding: 45px 15px;
   background-color: #FFF;
 }
 
 #contents {
-  padding: 1px 15px;
+  padding: 0px 15px;
 }
 
-h1 {
+.title {
   border-bottom: 2px solid black;
 }
 
-.area h2 {
-  border-bottom: 2px solid black;
+.entry {
+  text-align: right;
 }
 
-.innerArea {
+.entry p {
+  text-align: left;
+}
+
+.inner-area {
   padding: 10px 10px;
   background-color: #EEE;
+  margin-bottom: 30px;
 }
 
-#news dt{
-  width : 150px;
-/* 左寄せ */
-  float : left;
-/* float解除 */
-  clear : both;
-}
-#news dd{
-/* dtの幅分の設定 */
-  margin-left : 160px;
-}
-#news dd a:link {
-  color: black;
-  text-decoration: underline;
-}
-#news dd a:visited {
-  color: black;
-  text-decoration: underline;
+dd {
+  padding-left: 20px;
+  margin-bottom: 10px;
 }

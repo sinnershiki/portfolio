@@ -13,7 +13,7 @@ class PageTest < Test::Unit::TestCase
     get '/'
     assert last_response.ok?
 
-    get '/works'
+    get '/about'
     assert last_response.ok?
   end
 
