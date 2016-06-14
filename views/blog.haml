@@ -1,14 +1,12 @@
+%h2.title Entries
 %div#contents
-  %h2.title Entries
-  %div#main
-    %div#entries.area
-      - @entries.each do |entry|
-        %h3.title=entry.title
-        %div.inner-area.entry
-          %p
-            =entry.summary
-          %a.btn.btn-info{href: entry.alternate_link, target: '_blank', role: 'button'}view more
-
-    %div#blog-link
-      %p
-        %a{href: 'http://sinner-shiki.hatenablog.com/', target: '_blank'}view another entries
+  %div#entries.area
+    - @entries.each do |entry|
+      %h3.title=entry.title
+      %div.inner-area.entry
+        %p
+          =entry.summary
+        %a.btn.btn-info{href: entry.alternate_link, target: '_blank', role: 'button'}view more
+  %div#blog-link
+    %p
+      %a{href: 'http://sinner-shiki.hatenablog.com/', target: '_blank'}view another entries

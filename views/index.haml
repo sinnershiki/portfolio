@@ -1,21 +1,20 @@
+%h2.title Welcom to sinnershiki.com
 %div#contents
-  %h2.title Welcom to sinnershiki.com
-  %div#main
-    %div#notification
-      %h3.title Notification
-      %div.inner-area
-        %dl
-          %dt 2016/06/14
-          %dd リニューアル
+  %div#notification
+    %h3.title Notification
+    %div.inner-area
+      %dl
+        %dt 2016/06/14
+        %dd リニューアル
 
-    %div#activity.area
-      %h3.title Activity
-      %div.inner-area
-        %dl
-          - @activities.each do |activity|
-            %dt=activity[:date]
-            %dd
-              - if activity[:uri]
-                %a{href: activity[:uri], target: "_blank"}=activity[:text]
-              - else
-                =activity[:text]
+  %div#activity.area
+    %h3.title Activity
+    %div.inner-area
+      %dl
+        - @activities.each do |activity|
+          %dt=activity[:date]
+          %dd
+            - if activity[:uri]
+              %a{href: activity[:uri], target: "_blank"}=activity[:text]
+            - else
+              =activity[:text]
